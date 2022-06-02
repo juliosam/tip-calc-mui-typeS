@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  box-sizing: border-box;
+}
+
+body{
+  background-color: hsl(185, 41%, 84%);
+}
+
+#root{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.App span{ display: block;}
+
+.spli {position:absolute; top: -70px; letter-spacing: 9px;}
+.tter {position:absolute; top: -50px; letter-spacing: 9px;}
+
+.input-area{
+  width: 310px;
+  height: 310px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px 10px;
+}
+
+.output-area{
+  width: 310px;
+  height: 310px;
+  border-radius: 12px;
+  background-color: hsl(186, 14%, 43%);
+  padding: 35px 30px 20px 30px ;
+
+}
+
+.bill{position: relative;}
+
+.bill span{
+  display: block;
+  margin-bottom: px;
+  font-size: 12px;
+}
+
+.bill p {
+  position: absolute;
+  top: 3px;
+  right: 20px;
+  color: rgb(255, 83, 83);
+  font-size: 12px;
+}
+
+.error {display:none}
+
+.bill input{
+  width: 270px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  text-align: end;
+  font-size: 17px;
+  padding-right: 10px;
+  background-color: aliceblue;
+}
+
+.bill img{position: absolute; top: 32px; left: 12px; width: 9px;}
+
+.percent-tip{
+  width: 270px;
+  height: 113px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 11px;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.percent-tip span{
+  width: 250px;
+  font-size: 12px;
+}
+
+.percent-tip button{
+  width: 83px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(186, 14%, 43%);
+  color: white;
+  font-size: 17px;
+}
+
+.percent-tip button:focus{
+  background-color:hsl(172, 67%, 45%);
+  outline: none;
+}
+
+.percent-tip input {
+  width: 80px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  text-align: end;
+  font-size: 16px;
+  padding-right: 10px;
+  background-color: aliceblue;
+}
+
+.people-number{position: relative; margin-top: 30px;}
+
+.people-number img{position: absolute; top: 38px; left: 12px; width: 10px;}
+
+.people-number span{
+  display: block;
+  margin: 05px 0 0p 0;
+  font-size: 12px;
+}
+
+.people-number p {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: rgb(255, 83, 83);
+  font-size: 12px;
+}
+
+.error2{display: none;}
+
+.people-number input{
+  width: 270px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  text-align: end;
+  font-size: 17px;
+  padding-right: 10px;
+  background-color: aliceblue;
+}
+
+.bill-per-person{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bill-per-person div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.bill-per-person span{
+  font-size: 12px;
+  color: white;
+}
+
+.bill-per-person span:last-child{
+  font-size: 10px;
+}
+
+.bill-per-person output{
+  font-size: 40px;
+  color: hsl(172, 67%, 45%);
+}
+
+.tip-per-person {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.tip-per-person div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.tip-per-person span{
+  font-size: 12px;
+  color: white;
+}
+
+.tip-per-person span:last-child{
+  font-size: 10px;
+}
+
+.tip-per-person output{
+  font-size: 40px;
+  color: hsl(172, 67%, 45%);
+}
+
+.output-area button{
+  width: 100%;
+  height: 34px;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(186, 14%, 43%);
+  margin-top: 75px;
+}
+
+@media (max-width: 800px){
+  .App{
+    padding-top: 400px;
+    width: 375px;
+  }
+
+  .spli { top: 300px; font-size: 26px;}
+  .tter { top: 340px; font-size: 26px; }
+
+  .content{ 
+    margin: 0 auto;
+    width: 375px;
+    height: 820px;
+    flex-wrap: wrap;
+    padding: 20px 0 0 0;
+  }
+
+  .input-area{
+    padding: 0;
+    margin: 10px 32px;
+    width: 311px;
+  }
+
+  .output-area{
+    width: 311px;
+    margin: 102px 0 0 32px;
+    height: 275px;
+  }
+
+  .bill span{
+    font-size: 14px;
+  }
+  
+  .bill p {
+    top: 1px;
+    right: 0px;
+    font-size: 13px;
+  }
+  
+  .bill input{ width: 311px; height: 45px; font-size: 25px; padding-right: 20px;}
+
+  .bill img{position: absolute; top: 43px; left: 18px; width: 12px;}
+
+  .percent-tip{width: 311px; height: 200px;}
+  
+  .percent-tip span{ font-size: 14px;}
+  
+  .percent-tip button{
+    width: 147px;
+    height: 45px;
+    border-radius: 6px;
+    font-size: 24px;
+  }
+  
+  .percent-tip input {
+    width: 147px;
+    height: 45px;
+    border-radius: 6px;
+    font-size: 24px;
+    padding-right: 30px;
+  }
+
+  .people-number input{
+    width: 311px;
+    height: 45px;
+    border-radius: 6px;
+    font-size: 25px;
+    padding-right: 20px;
+  }
+
+  .people-number img{ top: 45px; left: 18px; width: 14px;}
+  
+  .people-number span{
+    margin: 27px 0 12px 0;
+    font-size: 14px;
+  }
+  
+  .people-number p {
+    top: 2px;
+    right: 0px;
+    font-size: 12px;
+  }
+
+  .output-area button{
+    height: 45px;
+    border-radius: 6px;
+    font-size: 19px;
+    margin-top: 35px;
+  }
+
+  .tip-per-person output{
+    font-size: 38px;
+  }
+
+  .bill-per-person output{
+    font-size: 38px;
+  }
+  
+}
